@@ -5,159 +5,169 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Город Сеона">
-      </a>
+    <div class="body__wrapper">
+      <header class="page-header">
+        <div class="header__wrapper">
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Город Сеона">
+          </a>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a>
-                Фото и видео
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-    <main class="page-main">
-      <div class="herro">
-        <p>herro pic</p>
-      </div>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="main-nav__item main-nav__item--current">
+                  <a>
+                    Фото и видео
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="form.html">
+                    Форма отзыва
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#">
+                    HTML Academy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-      <section class="photo">
-        <div class="legend">
-          <div class="legend__wrapper">
-            <h1 class="legend__title">Фото и видео</h1>
-            <p class="legend__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <div class="herro">
+            <p>herro pic</p>
           </div>
         </div>
+      </header>
 
-        <ul class="photo__list">
-          <li class="photo__item">
-            <img class="photo__item__img" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на закате">
-            <h3 class="photo__item__title">Неродные просторы</h3>
-            <p class="photo__item__author">Автор фото: Борис</p>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-              </svg>
-              <span class="photo__like__numbers">1350</span>
+      <main class="page-main">
+        <div class="main__wrapper">
+          <section class="photo">
+            <div class="photo__wrapper">
+              <div class="legend">
+                <div class="legend__wrapper">
+                  <h1 class="legend__title">Фото и видео</h1>
+                  <p class="legend__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+                </div>
+              </div>
+
+              <ul class="photo__list">
+                <li class="photo__item">
+                  <img class="photo__item__img" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на закате">
+                  <h3 class="photo__item__title">Неродные просторы</h3>
+                  <p class="photo__item__author">Автор фото: Борис</p>
+                  <div class="photo__like">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="photo__like__numbers">1350</span>
+                  </div>
+                </li>
+
+                <li class="photo__item">
+                  <img class="photo__item__img" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Цветущий кактус">
+                  <h3 class="photo__item__title">Местная растительность</h3>
+                  <p class="photo__item__author">Автор фото: Сергей</p>
+                  <div class="photo__like">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="photo__like__numbers">143</span>
+                  </div>
+                </li>
+
+                <li class="photo__item">
+                  <img class="photo__item__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога">
+                  <h3 class="photo__item__title">Дорога на север</h3>
+                  <p class="photo__item__author">Автор фото: Петр</p>
+                  <div class="photo__like">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="photo__like__numbers">96</span>
+                  </div>
+                </li>
+
+                <li class="photo__item">
+                  <img class="photo__item__img" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Вид на каньон">
+                  <h3 class="photo__item__title">Мост Дьявола</h3>
+                  <p class="photo__item__author">Автор фото: Антон</p>
+                  <div class="photo__like">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <span class="photo__like__numbers">254</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
+          </section>
 
-          <li class="photo__item">
-            <img class="photo__item__img" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Цветущий кактус">
-            <h3 class="photo__item__title">Местная растительность</h3>
-            <p class="photo__item__author">Автор фото: Сергей</p>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-              </svg>
-              <span class="photo__like__numbers">143</span>
+          <section class="promo">
+            <div class="promo__wrapper">
+              <div class="legend">
+                <div class="legend__wrapper">
+                  <h2 class="legend__title">Все ещё сомневаетесь?</h2>
+                  <p class="legend__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+                </div>
+
+                <div class="promo__video">
+                  <img class="video" src="img/video-mobile.jpg" width="320" height="201" alt="Дорога в седону">
+                </div>
+                <div class="video__controls">
+                  <p>video__controls</p>
+                </div>
+              </div>
             </div>
-          </li>
-
-          <li class="photo__item">
-            <img class="photo__item__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога">
-            <h3 class="photo__item__title">Дорога на север</h3>
-            <p class="photo__item__author">Автор фото: Петр</p>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-              </svg>
-              <span class="photo__like__numbers">96</span>
-            </div>
-          </li>
-
-          <li class="photo__item">
-            <img class="photo__item__img" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Вид на каньон">
-            <h3 class="photo__item__title">Мост Дьявола</h3>
-            <p class="photo__item__author">Автор фото: Антон</p>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-              </svg>
-              <span class="photo__like__numbers">254</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="promo">
-        <div class="legend">
-          <div class="legend__wrapper">
-            <h2 class="legend__title">Все ещё сомневаетесь?</h2>
-            <p class="legend__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-
-          <div class="promo__video">
-            <img class="video" src="img/video-mobile.jpg" width="320" height="201" alt="Дорога в седону">
-          </div>
-          <div class="video__controls">
-            <p>video__controls</p>
-          </div>
+          </section>
         </div>
+      </main>
 
-      </section>
-    </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <section class="contacts">
+            <h2 class="visually-hidden">Наш хештег</h2>
+            <div class="contacts__hashtag">
+              <a href="#">#visitsedona</a>
+            </div>
+          </section>
 
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <section class="contacts">
-          <h2 class="visually-hidden">Наш хештег</h2>
-          <div class="contacts__hashtag">
-            <a href="#">#visitsedona</a>
-          </div>
-        </section>
+          <section class="social">
+            <h2 class="visually-hidden">Наши соцсети</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__button" href="#"><span class="visually-hidden">Twitter</span><img src="img/icon-twitter.svg" width="17" height="15" alt="Логотип Twitter"></a>
+              </li>
 
-        <section class="social">
-          <h2 class="visually-hidden">Наши соцсети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__button" href="#"><span class="visually-hidden">Twitter</span><img src="img/icon-twitter.svg" width="17" height="15" alt="Логотип Twitter"></a>
-            </li>
+              <li class="social__item">
+                <a class="social__button" href="#"><span class="visually-hidden">Facebook</span><img src="img/icon-facebook.svg" width="9" height="19" alt="Логотип Facebook"></a>
+              </li>
 
-            <li class="social__item">
-              <a class="social__button" href="#"><span class="visually-hidden">Facebook</span><img src="img/icon-facebook.svg" width="9" height="19" alt="Логотип Facebook"></a>
-            </li>
+              <li class="social__item">
+                <a class="social__button" href="#"><span class="visually-hidden">YouTube</span><img src="img/icon-youtube.svg" width="20" height="14" alt="Логотип YouTub"></a>
+              </li>
+            </ul>
+          </section>
 
-            <li class="social__item">
-              <a class="social__button" href="#"><span class="visually-hidden">YouTube</span><img src="img/icon-youtube.svg" width="20" height="14" alt="Логотип YouTub"></a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="copyright">
-          <h2 class="visually-hidden">Сайт разработали</h2>
-          <span class="copyright__by">Разработано</span>
-          <div class="copyright__logo">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-link"><span class="visually-hidden">Html academy</span>
-              <img class="copyright__logo" src="img/htmlacademy2.svg" width="27" height="34" alt="Логотим академии">
-            </a>
-          </div>
-        </section>
-      </div>
-    </footer>
+          <section class="copyright">
+            <h2 class="visually-hidden">Сайт разработали</h2>
+            <span class="copyright__by">Разработано</span>
+            <div class="copyright__logo">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-link"><span class="visually-hidden">Html academy</span>
+                <img class="copyright__logo" src="img/htmlacademy2.svg" width="27" height="34" alt="Логотим академии">
+              </a>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
