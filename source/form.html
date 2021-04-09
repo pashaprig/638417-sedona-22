@@ -63,25 +63,25 @@
               <div class="container reviews-form__wrapper">
                 <form class="reviews-form" method="GET" action="https://echo.htmlacademy.ru">
                   <div class="container reviews-form__wrapper">
-                    <div class="form__name__groupe">
-                      <fieldset class="form__name">
+                    <div class="form__groupe">
+                      <fieldset class="form__fieldset">
                         <legend class="form__legend">Представьтесь:</legend>
                         <label class="form__label">Имя*
-                          <input class="form__input" type="text" placeholder="Петр" required>
+                          <input class="form__input" type="text" name="name" placeholder="Петр" required>
                         </label>
 
                         <label class="form__label">Фамилия*
-                          <input class="form__input" type="text" placeholder="Иванов" required>
+                          <input class="form__input" type="text" name="surname" placeholder="Иванов" required>
                         </label>
 
                         <label class="form__label">Отчество
-                          <input class="form__input" type="text" placeholder="Александрович">
+                          <input class="form__input" type="text" name="father-name" placeholder="Александрович">
                         </label>
                       </fieldset>
                     </div>
 
-                    <div class="form__contact__groupe">
-                      <fieldset class="form__contact">
+                    <div class="form__groupe">
+                      <fieldset class="form__fieldset">
                         <legend class="form__legend">Контактная нформация:</legend>
                         <label class="form__label">Контактный телефон*
                           <input class="form__input" type="tel" placeholder="Введите телефон" required>
@@ -99,55 +99,55 @@
                       </fieldset>
                     </div>
 
-                    <div class="form__impression__groupe">
-                      <fieldset class="form__impression">
+                    <div class="form__groupe">
+                      <fieldset class="form__fieldset">
                         <legend class="form__legend">Ваше общее впечатление:</legend>
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="radio" name="impression__question" value="Скорее положительное" checked>Скорее положительное
                         </label>
 
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="radio" name="impression__question" value="Скорее отрицательное">Скорее отрицательное
                         </label>
 
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="radio" name="impression__question" value="Затрудняюсь ответить">Затрудняюсь ответить
                         </label>
                       </fieldset>
                     </div>
 
-                    <div class="form__showplace__groupe">
-                      <fieldset class="form__showplace">
+                    <div class="form__groupe">
+                      <fieldset class="form__fieldset">
                         <legend class="form__legend">Посещенные достопримечательности:</legend>
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="checkbox" checked>Мост Дьявола
                         </label>
 
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="checkbox" checked>Гора-Колокол
                         </label>
 
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="checkbox" checked>Слайд-парк
                         </label>
 
-                        <label class="form__label">
+                        <label class="form__label radio__label">
                           <input class="form__input" type="checkbox">Красные скалы
                         </label>
                       </fieldset>
                     </div>
 
-                    <div class="form__emotion__groupe">
-                      <fieldset class="form__emotion">
+                    <div class="form__groupe">
+                      <fieldset class="form__fieldset">
                         <legend class="form__legend">Опишите свои эмоции:</legend>
                         <label class="form__label">
-                          <textarea class="form_input" name="comment" rows="8" cols="30">Опишите подробно все свои восторги</textarea>
+                          <textarea class="form__input" name="comment" rows="8" cols="23">Опишите подробно все свои восторги</textarea>
                         </label>
                       </fieldset>
                     </div>
 
                     <div class="form__button__groupe">
-                      <button class="form__submit" type="submit">Отправить отзыв</button>
+                      <button class="button form__submit" type="submit">Отправить отзыв</button>
                     </div>
                   </div>
                 </form>
