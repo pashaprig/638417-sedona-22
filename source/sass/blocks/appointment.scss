@@ -1,0 +1,28 @@
+.appointment__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.appointment__more {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.appointment__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  min-height: 58px;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin-bottom: 49px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $basic-white;
+  background-color: $basic-blue;
+  text-decoration: none;
+}

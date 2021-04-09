@@ -1,0 +1,37 @@
+//advantages-list
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+//advantages__item
+
+.advantages__item__numerous {
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.advantages__item__last {
+  background-color: $basic-grey;
+  color: $basic-black;
+}
+
+.advantages__item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__item__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__item__about {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
