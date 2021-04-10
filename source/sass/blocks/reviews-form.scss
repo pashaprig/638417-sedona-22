@@ -1,0 +1,60 @@
+.form__groupe {
+  padding: 20px;
+  border-top: 1px solid $form-groupe-grey;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__input {
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: $input-grey;
+  border: none;
+}
+
+input[name="name"] {
+  max-width: 208px;
+}
+
+input[name="surname"],
+input[name="father-name"] {
+  max-width: 170px;
+}
+
+input[type="tel"],
+input[type="email"] {
+  max-width: 200px;
+}
+
+.radio__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__submit {
+  border: none;
+}
