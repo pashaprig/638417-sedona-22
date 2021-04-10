@@ -38,11 +38,13 @@ input[name="name"] {
   max-width: 208px;
 }
 
-input[name="surname"], input[name="father-name"] {
+input[name="surname"],
+input[name="father-name"] {
   max-width: 170px;
 }
 
-input[type="tel"], input[type="email"] {
+input[type="tel"],
+input[type="email"] {
   max-width: 200px;
 }
 
