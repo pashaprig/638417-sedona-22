@@ -1,0 +1,27 @@
+.photo {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.photo__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.photo__item {
+  padding-top: 22px;
+  border-top: 1px solid $form-groupe-grey;
+}
+
+.photo__item__title,
+.photo__like__numbers,
+.photo__item__author {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__item__author {
+  font-weight: 400;
+}
