@@ -11,12 +11,6 @@
   overflow: hidden;
 }
 
-.container {
-  width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
-}
-
 .button {
   display: flex;
   justify-content: center;
@@ -30,6 +24,20 @@
   line-height: 26px;
   color: $basic-white;
   background-color: $basic-blue;
+}
+
+.container {
+  // width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+  }
 }
 
 input::placeholder {

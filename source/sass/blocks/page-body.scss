@@ -5,4 +5,9 @@
   font-size: 21px;
   line-height: 15px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }

@@ -1,6 +1,57 @@
+.reviews-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .form__groupe {
   padding: 20px;
   border-top: 1px solid $form-groupe-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+  }
+}
+
+.form__groupe__name {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+}
+
+.form__groupe__contacts {
+  @media (min-width: $tablet-width) {
+    grid-column: span 4;
+  }
+}
+
+.form__groupe__radio {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    order: -1;
+  }
+}
+
+.form__groupe__checkbox {
+  @media (min-width: $tablet-width) {
+    grid-column: span 4;
+  }
+}
+
+.form__groupe__textarea {
+  @media (min-width: $tablet-width) {
+    grid-column: span 4;
+  }
+}
+
+.form__groupe__submit {
+  @media (min-width: $tablet-width) {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .form__fieldset {
@@ -46,6 +97,10 @@ input[name="father-name"] {
 input[type="tel"],
 input[type="email"] {
   max-width: 200px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 590px;
+  }
 }
 
 .radio__label {
@@ -57,4 +112,24 @@ input[type="email"] {
 
 .form__submit {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    min-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.form__hint {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

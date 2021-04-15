@@ -1,5 +1,4 @@
 .appointment {
-  padding: 0 20px;
   text-align: center;
 }
 
@@ -16,5 +15,12 @@
 }
 
 .appointment__button {
+  width: 280px;
+  max-width: 458px;
+  margin: 0 auto;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
 }
