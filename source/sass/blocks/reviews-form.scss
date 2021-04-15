@@ -54,12 +54,41 @@
   }
 }
 
+.form__groupe__checkbox__wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form__groupe__contacts__icon {
+  display: flex;
+}
+
+.form__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background-color: $icon-grey;
+}
+
 .form__fieldset {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   border: none;
+
+  &--desktop--row {
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
 }
 
 .form__legend {
@@ -72,6 +101,44 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+
+  &--bold {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: none;
+  }
+}
+
+.contacts__ladel__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.checkbox__ladel__wrapper {
+  @media (min-width: $tablet-width) {
+    min-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 25%;
+  }
+}
+
+.label__desktop__only {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.label__mobile__only {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .form__input {
@@ -101,13 +168,10 @@ input[type="email"] {
   @media (min-width: $tablet-width) {
     min-width: 590px;
   }
-}
 
-.radio__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
+  @media (min-width: $desktop-width) {
+    min-width: 258px;
+  }
 }
 
 .form__submit {
