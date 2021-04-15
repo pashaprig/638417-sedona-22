@@ -48,11 +48,6 @@
 .form__groupe__submit {
   @media (min-width: $tablet-width) {
     grid-column: span 4;
-  }
-}
-
-.form__groupe__submit {
-  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
