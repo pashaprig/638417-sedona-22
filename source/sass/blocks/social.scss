@@ -18,3 +18,11 @@
 .social__list :last-child {
   margin-right: 0;
 }
+
+.social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

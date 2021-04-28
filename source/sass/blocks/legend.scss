@@ -1,3 +1,12 @@
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 520px;
+  min-height: 165px;
+  padding: 0px 30px;
+}
+
 .legend h1,
 .legend p {
   padding: 0;
