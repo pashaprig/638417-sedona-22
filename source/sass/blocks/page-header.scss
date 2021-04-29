@@ -3,13 +3,31 @@
   flex-direction: column;
 }
 
-.page-header__logo {
-  margin: 0 auto;
+.page-header__bottom {
+  min-height: 56px;
+}
+
+.page-header__top {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo__wrapper {
+  position: relative;
+  min-height: 56px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
   }
+}
+
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
 }

@@ -14,12 +14,16 @@
 //advantages__item
 
 .advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0 20px;
   min-height: 170px;
   text-align: center;
 
   &--extended {
     padding: 0;
+    background-color: $bcg-photo;
 
     @media (min-width: $tablet-width) {
       grid-column: span 2;
@@ -27,21 +31,86 @@
   }
 
   &--blue {
+    min-height: 111px;
+    padding: 40px 13px;
     background-color: $basic-blue;
     color: $basic-white;
   }
 
   &--align-left {
+    min-height: 105px;
     text-align: left;
   }
 
   &--grey {
+    min-height: 117px;
+    padding: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
     background-color: $basic-grey;
     color: $basic-black;
+    border-bottom: 1px solid $border-grey;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 256px;
+  }
+}
+
+.advantages__item:last-child {
+  border: none;
+}
+
+.advantages__item:nth-child(3) {
+  margin-top: 20px;
+}
+
+.advantages__item:nth-child(5) {
+  margin-bottom: 20px;
+}
+
+.advantages__item:nth-child(3) .advantages__item__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  &::before {
+    content: url("../img/icon-house.svg");
+    margin-right: 9px;
+  }
+}
+
+.advantages__item:nth-child(4) .advantages__item__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  &::before {
+    content: url("../img/icon-gift.svg");
+    margin-right: 17px;
+  }
+}
+
+.advantages__item:nth-child(5) .advantages__item__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  &::before {
+    content: url("../img/icon-burger.svg");
+    margin-right: 12px;
   }
 }
 
@@ -67,4 +136,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.advantages__item--align-left .advantages__item__about {
+  margin-left: 50px;
 }
