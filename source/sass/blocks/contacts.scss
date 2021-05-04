@@ -4,4 +4,13 @@
   line-height: 26px;
   color: $basic-black;
   text-decoration: none;
+
+  &:hover {
+    color: $basic-blue;
+  }
+
+  &:active {
+    color: $basic-black;
+    opacity: 0.3;
+  }
 }
