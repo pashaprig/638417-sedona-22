@@ -13,6 +13,18 @@
   height: 48px;
   margin-right: 6px;
   background-color: $basic-blue;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+
+  &:active img{
+    opacity: 0.3;
+  }
 }
 
 .social__list :last-child {
