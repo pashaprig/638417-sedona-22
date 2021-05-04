@@ -81,6 +81,10 @@
   &::before {
     content: url("../img/icon-house.svg");
     margin-right: 9px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+    }
   }
 }
 
