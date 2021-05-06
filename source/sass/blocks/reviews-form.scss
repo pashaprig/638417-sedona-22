@@ -116,6 +116,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+    width: 50%;
   }
 }
 
@@ -178,13 +179,9 @@ input[type="email"] {
   min-width: 200px;
   width: 100%;
 
-  // @media (min-width: $tablet-width) {
-  //   min-width: 590px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   min-width: 258px;
-  // }
+  @media (min-width: $desktop-width) {
+    min-width: 256px;
+  }
 }
 
 .form__submit {
