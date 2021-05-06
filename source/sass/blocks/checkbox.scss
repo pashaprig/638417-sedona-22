@@ -1,19 +1,14 @@
-//Option
-
-.option {
-  display: block;
-  margin-bottom: 25px;
-}
-
-//Ceck
+//Check
 
 .check {
   display: flex;
+  margin-bottom: 24px;
 }
 
 .check__input{
   width: 56px;
   height: 56px;
+  margin: 0;
   margin-right: 24px;
   -webkit-appearance: none;
   -moz-appearance: none;
