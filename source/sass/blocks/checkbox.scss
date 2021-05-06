@@ -1,0 +1,38 @@
+//Option
+
+.option {
+  display: block;
+  margin-bottom: 25px;
+}
+
+//Ceck
+
+.check {
+  display: flex;
+}
+
+.check__input{
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: 22px;
+  margin-right: 20px;
+}
+
+/* Checked */
+.check__input:checked + .check__box {
+  width: 23px;
+  height: 16px;
+  background-image: url(../img/tick.svg);
+}
+
+.check__input:checked:active + .check__box {
+  opacity: 0.3;
+}
