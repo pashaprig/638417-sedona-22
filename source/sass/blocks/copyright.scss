@@ -8,3 +8,13 @@
   font-size: 14px;
   line-height: 26px;
 }
+
+.copyright__logo {
+  &:active path {
+    opacity: 0.3;
+  }
+
+  &:hover path {
+    fill: $basic-blue;
+  }
+}

@@ -1,0 +1,34 @@
+//Radio
+
+.radio {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.radio__input {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  margin-right: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+}
+
+.radio__box {
+  position: absolute;
+  margin-left: 18px;
+}
+
+/* Checked */
+.radio__input:checked + .radio__box {
+  width: 20px;
+  height: 20px;
+  background-color: $radio;
+  border-radius: 50%;
+}
+
+.radio__input:checked:active + .radio__box {
+  opacity: 0.3;
+}
