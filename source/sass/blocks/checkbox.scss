@@ -5,7 +5,7 @@
   margin-bottom: 24px;
 }
 
-.check__input{
+.check__input {
   width: 56px;
   height: 56px;
   margin: 0;
@@ -25,7 +25,7 @@
 .check__input:checked + .check__box {
   width: 23px;
   height: 16px;
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
 }
 
 .check__input:checked:active + .check__box {
