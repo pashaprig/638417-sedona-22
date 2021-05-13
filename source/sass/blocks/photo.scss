@@ -1,7 +1,4 @@
 .photo {
-  padding-right: 20px;
-  padding-left: 20px;
-
   @media (min-width: $tablet-width) {
     padding-right: 0;
     padding-left: 0;
@@ -26,8 +23,10 @@
 
 .photo__item {
   position: relative;
-  margin-top: 22px;
-  border-top: 1px solid $form-groupe-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $form-groupe-grey;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -44,6 +43,19 @@
   }
 }
 
+.photo__item__wrapper {
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 21px;
+  border-top: 1px solid $form-groupe-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .photo__item__img {
   background-color: $bcg-photo;
 }
@@ -53,7 +65,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $bcg-photo-title;
+    background-color: $input-grey;
+
+    &--contrast {
+      background-color: $bcg-photo-title;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -65,12 +81,37 @@
   }
 }
 
+.photo__title__groupe {
+  margin-left: 20px;
+}
+
+.photo__like {
+  display: flex;
+}
+
+.photo__like path {
+  @media (min-width: $desktop-width) {
+    fill: $basic-white;
+    opacity: 1;
+  }
+}
+
 .photo__item__title,
 .photo__like__numbers,
 .photo__item__author {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+}
+
+.photo__like__numbers {
+  display: block;
+  margin-left: 14px;
+  min-width: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .photo__item__author {
