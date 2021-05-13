@@ -13,34 +13,19 @@
   }
 }
 
-// .page-header__logo__wrapper {
-//   position: relative;
-//   min-height: 56px;
-
-//   @media (min-width: $tablet-width) {
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     max-width: 1200px;
-//   }
-// }
-
 .page-header__logo {
   position: absolute;
   left: 50%;
-  width: 102px;
-  height: 84px;
   transform: translateX(-50%);
   margin: 0 auto;
-  background-image: url("../img/logotype-mobile.svg");
+}
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/logotype-tablet.svg");
-  }
+.page-header__logo img {
+  width: 102px;
+  height: 84px;
 
   @media (min-width: $desktop-width) {
     width: 187px;
     height: 97px;
-    background-image: url("../img/logotype-desktop.svg");
   }
 }

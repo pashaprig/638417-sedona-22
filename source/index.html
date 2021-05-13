@@ -44,9 +44,12 @@
         </div>
 
         <div class="page-header__bottom">
-          <a class="" href="#">
-            <div class="page-header__logo">
-            </div>
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype-mobile.svg" width="102" height="84" alt="Городок Седона">
+            </picture>
           </a>
 
           <nav class="main-nav main-nav-not-mobile main-nav--nojs">
@@ -97,7 +100,11 @@
                 </li>
 
                 <li class="advantages__item advantages__item--extended">
-                  <img class="" src="img/photo-city1-mobile.jpg" width="320" height="260" alt="Фасад отеля в седоне">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-city-tablet@1x.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
+                    <img class="" src="img/index/photo-city-mobile@1x.jpg" srcset="img/index/photo-city-mobile@2x.jpg 2x" alt="Фасад отеля в седоне">
+                  </picture>
                 </li>
 
                 <li class="advantages__item advantages__item--align-left">
@@ -122,7 +129,13 @@
                 </li>
 
                 <li class="advantages__item advantages__item--extended">
-                  <img class="" src="img/photo-bridge1-mobile.jpg" width="320" height="260" alt="Вид на каньон">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet@1x.jpg 1x, img/index/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="" src="img/index/photo-bridge-mobile@1x.jpg" srcset="img/index/photo-bridge-mobile@2x.jpg 2x" alt="Вид на каньон">
+                  </picture>
+
+                  <!-- <img class="" src="img/photo-bridge1-mobile.jpg" width="320" height="260" alt="Вид на каньон"> -->
                 </li>
 
                 <li class="advantages__item advantages__item--grey">

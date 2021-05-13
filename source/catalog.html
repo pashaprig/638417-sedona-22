@@ -41,9 +41,12 @@
         </div>
 
         <div class="page-header__bottom">
-          <a class="" href="index.html">
-            <div class="page-header__logo">
-            </div>
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype-mobile.svg" width="102" height="84" alt="Городок Седона">
+            </picture>
           </a>
 
           <nav class="main-nav main-nav-not-mobile main-nav--nojs">
@@ -91,12 +94,14 @@
               <ul class="photo__list">
                 <li class="photo__item photo__item--extended">
                   <div class="photo__item__wrapper">
-                    <div class="photo__item__img">
-                      <img class="" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на закате">
-                    </div>
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                        <img class="photo__item__img" src="img/catalog/photo-1-mobile@1x.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Дорога на закате">
+                      </picture>
 
                     <div class="photo__about__wrapper">
-                      <div class="s">
+                      <div class="photo__title__groupe">
                         <h3 class="photo__item__title">Неродные просторы</h3>
                         <p class="photo__item__author">Автор фото: Борис</p>
                       </div>
@@ -113,9 +118,11 @@
 
                 <li class="photo__item">
                   <div class="photo__item__wrapper">
-                    <div class="photo__item__img">
-                      <img class="" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус цветёт">
-                    </div>
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                      <img class="photo__item__img" src="img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Кактус цветёт">
+                    </picture>
 
                     <div class="photo__about__wrapper">
                       <div class="photo__title__groupe">
@@ -135,9 +142,11 @@
 
                 <li class="photo__item">
                   <div class="photo__item__wrapper">
-                    <div class="photo__item__img">
-                      <img class="" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога">
-                    </div>
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                      <img class="photo__item__img" src="img/catalog/photo-3-mobile@1x.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Горная дорога">
+                    </picture>
 
                     <div class="photo__about__wrapper photo__about__wrapper--contrast">
                       <div class="photo__title__groupe">
@@ -157,9 +166,11 @@
 
                 <li class="photo__item">
                   <div class="photo__item__wrapper">
-                    <div class="photo__item__img">
-                      <img class="" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Карниз над обрывом">
-                    </div>
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop@1x.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet@1x.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+                      <img class="photo__item__img" src="img/catalog/photo-4-mobile@1x.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Карниз над обрывом">
+                    </picture>
 
                     <div class="photo__about__wrapper">
                       <div class="photo__title__groupe">
@@ -188,7 +199,12 @@
               </div>
 
               <div class="promo__video">
-                <img class="video" src="img/video-mobile.jpg" width="320" height="201" alt="Дорога в седону">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+                  <img class="photo__item__img" src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Дорога на закате">
+                </picture>
+                <!-- <img class="photo__item__img" src="img/video-mobile.jpg" width="320" height="201" alt="Дорога в седону"> -->
               </div>
               <div class="video__controls">
                 <p>video__controls</p>
