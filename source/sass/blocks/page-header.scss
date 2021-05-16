@@ -19,13 +19,3 @@
   transform: translateX(-50%);
   margin: 0 auto;
 }
-
-.page-header__logo img {
-  width: 102px;
-  height: 84px;
-
-  @media (min-width: $desktop-width) {
-    width: 187px;
-    height: 97px;
-  }
-}
