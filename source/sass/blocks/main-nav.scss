@@ -1,6 +1,6 @@
 // main-nav__list
 .main-nav {
-  order: -1;
+  order: 1;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -120,6 +120,7 @@
   align-items: center;
   justify-content: center;
   min-height: 55px;
+  z-index: 2;
   background-color: $basic-blue;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
