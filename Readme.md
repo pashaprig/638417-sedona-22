@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Павел Пригарницкий](https://up.htmlacademy.ru/adaptive/22/user/638417).
-* Наставник: [Владислав Ермолаев] (https://htmlacademy.ru/profile/id128353).
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
