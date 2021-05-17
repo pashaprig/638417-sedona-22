@@ -44,9 +44,10 @@
         </div>
 
         <div class="page-header__bottom">
-          <a class="" href="#">
-            <div class="page-header__logo">
-            </div>
+          <a class="page-header__logo" href="#">
+            <picture>
+              <img class="logo" src="img/logotype-adaptive.svg" width="102" height="84" alt="Городок Седона">
+            </picture>
           </a>
 
           <nav class="main-nav main-nav-not-mobile main-nav--nojs">
@@ -97,7 +98,11 @@
                 </li>
 
                 <li class="advantages__item advantages__item--extended">
-                  <img class="" src="img/photo-city1-mobile.jpg" width="320" height="260" alt="Фасад отеля в седоне">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-city-tablet@1x.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
+                    <img class="" src="img/index/photo-city-mobile@1x.jpg" srcset="img/index/photo-city-mobile@2x.jpg 2x" alt="Фасад отеля в седоне">
+                  </picture>
                 </li>
 
                 <li class="advantages__item advantages__item--align-left">
@@ -122,7 +127,13 @@
                 </li>
 
                 <li class="advantages__item advantages__item--extended">
-                  <img class="" src="img/photo-bridge1-mobile.jpg" width="320" height="260" alt="Вид на каньон">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/index/photo-bridge-tablet@1x.jpg 1x, img/index/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="" src="img/index/photo-bridge-mobile@1x.jpg" srcset="img/index/photo-bridge-mobile@2x.jpg 2x" alt="Вид на каньон">
+                  </picture>
+
+                  <!-- <img class="" src="img/photo-bridge1-mobile.jpg" width="320" height="260" alt="Вид на каньон"> -->
                 </li>
 
                 <li class="advantages__item advantages__item--grey">
@@ -156,7 +167,8 @@
 
           <section class="map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/map-mobile.png" width="320" height="350" alt="Карта подъезда">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d263582.55146039254!2d-111.79707774755903!3d34.98572991935302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da69844c84035%3A0xc9ec47f79f1d063b!2sChapel%20of%20the%20Holy%20Cross!5e0!3m2!1suk!2sua!4v1614773280480!5m2!1suk!2sua" height="350" width="100%" style="border:0;" allowfullscreen loading="lazy" title="Часовня святого Креста 780 Chapel Rd, Sedona, AZ 86336, США">
+            </iframe>
           </section>
         </div>
       </main>

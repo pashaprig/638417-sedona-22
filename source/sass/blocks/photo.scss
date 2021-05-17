@@ -57,7 +57,10 @@
 }
 
 .photo__item__img {
+  width: 100%;
+  max-height: 260px;
   background-color: $bcg-photo;
+  object-fit: cover;
 }
 
 .photo__about__wrapper {
@@ -82,7 +85,9 @@
 }
 
 .photo__title__groupe {
-  margin-left: 20px;
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .photo__like {
