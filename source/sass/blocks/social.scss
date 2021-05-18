@@ -21,8 +21,12 @@
   &:active {
     background-color: $button-active;
   }
+}
 
-  &:active img {
+.social__icon {
+  fill: $basic-white;
+
+  &:active {
     opacity: 0.3;
   }
 }
