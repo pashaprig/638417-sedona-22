@@ -63,7 +63,6 @@
   background-color: $controls-grey;
 
   @media (min-width: $tablet-width) {
-
     &--not-mobile {
       display: none;
     }
@@ -96,7 +95,7 @@
   // margin: 22px 23px 20px 22px;
   margin-right: 23px;
   margin-left: 23px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .promo__controls__toggle {
