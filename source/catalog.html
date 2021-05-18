@@ -83,7 +83,7 @@
           <section class="photo">
             <div class="photo__wrapper">
               <div class="legend">
-                <div class="container legend__wrapper">
+                <div class="legend__wrapper">
                   <h1 class="legend__title">Фото и видео</h1>
                   <p class="legend__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
                 </div>
@@ -204,15 +204,48 @@
                 <p class="legend__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               </div>
 
-              <div class="promo__video">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-                  <img class="photo__item__img" src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Дорога на закате">
-                </picture>
-              </div>
-              <div class="video__controls">
-                <p>video__controls</p>
+              <div class="video__wrapper">
+                <div class="promo__video">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+                    <img class="promo__video__img" src="img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Кактус цветёт">
+                  </picture>
+                </div>
+                <div class="promo__controls">
+                  <div class="promo__controls__progress">
+                    <div class="promo__controls__buttons__left promo__controls__buttons__left--not-mobile">
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--replay" width="16" height="20">
+                        <use xlink:href="img/sprite.svg#icon-replay"></use>
+                      </svg>
+                    </div>
+                    <div class="promo__controls__scale"></div>
+                    <div class="promo__controls__toggle" aria-label="Прокрутка видео"></div>
+                    <div class="promo__controls__buttons__right promo__controls__buttons__right--not-mobile">
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--subtitles" width="32" height="20">
+                        <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                      </svg>
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--fullscreen" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="promo__controls__buttons promo__controls__buttons--not-mobile">
+                    <div class="promo__controls__buttons__left">
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--replay" width="16" height="20">
+                        <use xlink:href="img/sprite.svg#icon-replay"></use>
+                      </svg>
+                    </div>
+                    <div class="promo__controls__buttons__right">
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--subtitles" width="32" height="20">
+                        <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                      </svg>
+                      <svg class="promo__controls__buttons__icon promo__controls__buttons__icon--fullscreen" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
 
             </div>
