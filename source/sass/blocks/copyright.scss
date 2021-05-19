@@ -9,12 +9,12 @@
   line-height: 26px;
 }
 
-.copyright__logo {
-  &:active path {
+.copyright__icon {
+  &:active {
     opacity: 0.3;
   }
 
-  &:hover path {
+  &:hover {
     fill: $basic-blue;
   }
 }

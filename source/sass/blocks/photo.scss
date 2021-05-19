@@ -94,7 +94,9 @@
   display: flex;
 }
 
-.photo__like path {
+.photo__like__like-icon {
+  opacity: 0.3;
+
   @media (min-width: $desktop-width) {
     fill: $basic-white;
     opacity: 1;
