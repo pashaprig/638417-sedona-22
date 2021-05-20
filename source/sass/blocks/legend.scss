@@ -1,16 +1,17 @@
 .legend {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 440px;
+  max-width: $mobile-width-only;
   min-height: 165px;
-  // padding: 20px;
   margin: 0 auto;
 }
 
 .legend__title {
-  padding: 0;
+  padding: 0 25px;
   margin: 0;
+  margin-top: 31px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -18,12 +19,20 @@
 }
 
 .legend__lead {
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
+  padding: 0 20px;
+  margin: 33px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+.legend__triangle {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  height: 100px;
+  clip-path: polygon(50% 19%, -6% 0, 106% 0);
+  -webkit-clip-path: polygon(50% 19%, -6% 0, 106% 0);
+  background-color: $basic-white;
 }
