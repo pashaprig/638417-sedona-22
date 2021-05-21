@@ -26,12 +26,13 @@
 
 .form__groupe__contacts {
   padding-bottom: 17px;
+
   @media (min-width: $tablet-width) {
     grid-column: span 4;
   }
 }
 
-.form__groupe__contacts .form__label{
+.form__groupe__contacts .form__label {
   margin-left: 22px;
 }
 
@@ -41,6 +42,7 @@
 
 .form__groupe__radio {
   padding-bottom: 11px;
+
   @media (min-width: $tablet-width) {
     grid-column: span 2;
     order: -1;
@@ -53,6 +55,7 @@
 
 .form__groupe__checkbox {
   padding-top: 15px;
+
   @media (min-width: $tablet-width) {
     grid-column: span 4;
   }
