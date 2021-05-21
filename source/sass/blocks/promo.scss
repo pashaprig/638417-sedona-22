@@ -1,5 +1,6 @@
 .video__wrapper {
   position: relative;
+  margin-bottom: 105px;
 }
 
 .promo__video {
@@ -100,9 +101,9 @@
 
 .promo__controls__toggle {
   position: absolute;
-  left: 56px;
-  width: 13px;
-  height: 13px;
+  left: 57px;
+  width: 10px;
+  height: 10px;
   background-color: $basic-white;
   border-radius: 50%;
   cursor: pointer;
@@ -129,7 +130,7 @@
   }
 
   &--subtitles {
-    margin-right: 31px;
+    margin-right: 25px;
   }
 
   &--fullscreen {
