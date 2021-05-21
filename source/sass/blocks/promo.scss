@@ -114,7 +114,6 @@
 
 .promo__controls__buttons__icon {
   fill: $controls-icon;
-
   &:hover {
     fill: $radio;
   }
@@ -134,5 +133,17 @@
 
   &--fullscreen {
     margin-right: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $basic-white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

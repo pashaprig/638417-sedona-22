@@ -2,7 +2,7 @@
 
 .radio {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 .radio__input {
@@ -10,8 +10,6 @@
   height: 56px;
   margin: 0;
   margin-right: 24px;
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
   appearance: none;
   border-radius: 50%;
 }

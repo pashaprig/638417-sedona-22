@@ -1,9 +1,9 @@
 //hero
 
 .hero {
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
   align-items: center;
   width: 100%;
   height: 389px;
@@ -20,9 +20,17 @@
   @media (min-width: $tablet-width) {
     height: 518px;
   }
+
+  &--smaller-height {
+    height: 157px;
+  }
 }
 
 .hero__triangle {
   position: absolute;
   bottom: -1px;
+}
+
+.hero__text--form {
+  margin-bottom: 17px;
 }
