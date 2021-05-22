@@ -23,6 +23,14 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
+
+  &--form-tablet {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-top: 27px;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .legend__lead {
@@ -60,6 +68,10 @@
 
 .legend--form .legend__lead {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 102px;
+  }
 }
 
 //Catalog

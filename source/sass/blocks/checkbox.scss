@@ -3,6 +3,15 @@
 .check {
   display: flex;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 96px;
+    margin-bottom: 32px;
+
+    &--less-margin {
+      margin-left: 32px;
+    }
+  }
 }
 
 .check__input {

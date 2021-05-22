@@ -3,6 +3,10 @@
 .radio {
   display: flex;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;;
+  }
 }
 
 .radio__input {
@@ -12,6 +16,10 @@
   margin-right: 24px;
   appearance: none;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .radio__box {
