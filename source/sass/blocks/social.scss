@@ -1,5 +1,10 @@
 .social {
   margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0px;
+    margin-right: 8px;
+  }
 }
 
 .social__list {
@@ -15,7 +20,7 @@
   align-items: center;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  margin-right: 9px;
   background-color: $basic-blue;
 
   &:hover {

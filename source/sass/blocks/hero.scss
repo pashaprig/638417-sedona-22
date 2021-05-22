@@ -23,6 +23,17 @@
 
   &--smaller-height {
     height: 157px;
+
+    @media (min-width: $tablet-width) {
+      height: 289px;
+    }
+  }
+}
+
+.hero__text {
+  @media (min-width: $tablet-width) {
+  width: 461px;
+  height: 350px;
   }
 }
 
@@ -33,4 +44,9 @@
 
 .hero__text--form {
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
 }

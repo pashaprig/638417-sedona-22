@@ -1,5 +1,9 @@
 .contacts {
   margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
 }
 
 .contacts__hashtag a {

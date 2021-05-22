@@ -4,6 +4,11 @@
   min-height: 191px;
   padding-top: 32px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    min-height: 160px;
+  }
 }
 
 .legend__title {
@@ -14,6 +19,10 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .legend__lead {
@@ -31,6 +40,10 @@
   height: 100px;
   clip-path: polygon(50% 19%, -6% 0, 106% 0);
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 //Form
