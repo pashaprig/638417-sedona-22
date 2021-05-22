@@ -49,6 +49,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
 }
 
 .form__groupe__contacts .form__label {
@@ -58,7 +64,7 @@
 .form__groupe__contacts .form__legend {
   margin-bottom: 15px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }
@@ -206,14 +212,6 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: none;
-  }
-}
-
-.contacts__ladel__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    align-items: center;
-    width: 50%;
   }
 }
 
