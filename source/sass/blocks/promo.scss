@@ -1,6 +1,10 @@
 .video__wrapper {
   position: relative;
   margin-bottom: 105px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .promo__video {
@@ -97,6 +101,11 @@
   margin-right: 23px;
   margin-left: 23px;
   background: rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 
 .promo__controls__toggle {
@@ -127,14 +136,26 @@
 
   &--replay {
     margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
   }
 
   &--subtitles {
     margin-right: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
   }
 
   &--fullscreen {
     margin-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 41px;
+    }
   }
 
   @media (min-width: $tablet-width) {

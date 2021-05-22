@@ -24,11 +24,17 @@
     font-size: 21px;
   }
 
-  &--form-tablet {
+  &--fs30px {
     @media (min-width: $tablet-width) {
       font-size: 30px;
       margin-top: 27px;
       padding-bottom: 5px;
+    }
+  }
+
+  &--mt34px {
+    @media (min-width: $tablet-width) {
+      margin-top: 34px;
     }
   }
 }
@@ -39,6 +45,12 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  &--padding105 {
+    @media (min-width: $tablet-width) {
+      padding: 0 105px;
+    }
+  }
 }
 
 .legend__triangle {
@@ -84,9 +96,36 @@
     min-height: 160px;
     padding-right: 15px;
     padding-left: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 28px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
   }
 }
 
 .legend--catalog .legend__title {
   margin-bottom: 28px;
 }
+
+.legend--catalog-bottom {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 53px;
+  }
+}
+
+.legend--catalog-bottom .legend__title{
+  @media (min-width: $tablet-width){
+    margin-bottom: 28px;
+  }
+}
+
+.legend--catalog-bottom .legend__lead{
+  @media (min-width: $tablet-width){
+    padding: 0 80px
+  }
+}
+
