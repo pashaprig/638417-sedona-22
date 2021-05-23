@@ -108,6 +108,7 @@
     min-height: 160px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 53px;
 
     @media (min-width: $tablet-width) {
       padding-top: 28px;
@@ -123,20 +124,14 @@
   margin-bottom: 28px;
 }
 
-.legend--catalog-bottom {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 53px;
-  }
-}
-
-.legend--catalog-bottom .legend__title{
+.legend--catalog-bottom .legend__title {
   @media (min-width: $tablet-width){
     margin-bottom: 28px;
   }
 }
 
-.legend--catalog-bottom .legend__lead{
-  @media (min-width: $tablet-width){
+.legend--catalog-bottom .legend__lead {
+  @media (min-width: $tablet-width) {
     padding: 0 80px
   }
 }
