@@ -1,6 +1,6 @@
 .legend {
   position: relative;
-  max-width: $mobile-width-only;
+  max-width: 500px;
   min-height: 191px;
   padding-top: 32px;
   margin: 0 auto;
@@ -24,6 +24,10 @@
     font-size: 21px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+
   &--fs30px {
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -45,6 +49,14 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 5px;
+  }
 
   &--padding105 {
     @media (min-width: $tablet-width) {
