@@ -12,6 +12,10 @@
       margin-left: 32px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .check__input {
@@ -21,6 +25,10 @@
   margin-right: 23px;
   appearance: none;
   border-radius: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 25px;
+  }
 }
 
 .check__box {
