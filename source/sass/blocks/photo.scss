@@ -1,5 +1,10 @@
 .photo {
   @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
   }
@@ -92,6 +97,10 @@
 .photo__title__groupe {
   @media (min-width: $tablet-width) {
     margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 22px;
   }
 }
 

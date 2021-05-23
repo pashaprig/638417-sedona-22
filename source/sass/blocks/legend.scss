@@ -14,7 +14,7 @@
 .legend__title {
   padding: 0 25px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -45,6 +45,7 @@
 
 .legend__lead {
   padding: 0 20px;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -58,9 +59,9 @@
     padding: 0 5px;
   }
 
-  &--padding105 {
+  &--padding35 {
     @media (min-width: $tablet-width) {
-      padding: 0 105px;
+      padding: 0 35px;
     }
   }
 }
@@ -117,30 +118,42 @@
     min-height: 160px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 53px;
 
     @media (min-width: $tablet-width) {
       padding-top: 28px;
+      margin-bottom: 53px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
   }
 }
 
 .legend--catalog .legend__title {
   margin-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .legend--catalog-bottom .legend__title {
   @media (min-width: $tablet-width) {
     margin-bottom: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .legend--catalog-bottom .legend__lead {
   @media (min-width: $tablet-width) {
-    padding: 0 80px;
+    padding: 0 25px;
   }
 }
