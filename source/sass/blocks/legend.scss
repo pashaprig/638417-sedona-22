@@ -125,13 +125,13 @@
 }
 
 .legend--catalog-bottom .legend__title {
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 28px;
   }
 }
 
 .legend--catalog-bottom .legend__lead {
   @media (min-width: $tablet-width) {
-    padding: 0 80px
+    padding: 0 80px;
   }
 }
