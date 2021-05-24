@@ -12,7 +12,7 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/back-desktop@2x.jpg");
+    background: url("../img/back-desktop@2x.jpg") no-repeat $basic-blue;
     background-position: 50% 0;
     background-size: cover;
   }
@@ -23,6 +23,13 @@
 
   &--smaller-height {
     height: 157px;
+    background: url("../img/back-desktop2@1x.jpg") no-repeat $basic-blue;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-desktop2@2x.jpg") no-repeat $basic-blue;
+      background-position: 50% 0;
+      background-size: cover;
+    }
 
     @media (min-width: $tablet-width) {
       height: 289px;
