@@ -17,6 +17,11 @@
     margin-top: 53px;
     border-top: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+  }
+
 }
 
 .form__groupe__name {
@@ -79,7 +84,23 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      margin-right: 62px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      margin-left: 62px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
   }
 }
 
@@ -123,7 +144,21 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 120px 24px 120px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -153,7 +188,23 @@
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
     margin-bottom: 45px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      margin-right: 75px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      margin-left: 75px;
+      border-bottom: 1px solid $groupe-border-grey;
+    }
   }
 }
 
