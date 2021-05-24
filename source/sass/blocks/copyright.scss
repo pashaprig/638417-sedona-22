@@ -1,5 +1,11 @@
 .copyright {
   display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .copyright__by {

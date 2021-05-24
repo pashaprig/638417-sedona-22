@@ -1,5 +1,15 @@
 .video__wrapper {
   position: relative;
+  margin-bottom: 105px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
+  }
 }
 
 .promo__video {
@@ -96,13 +106,18 @@
   margin-right: 23px;
   margin-left: 23px;
   background: rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }
 
 .promo__controls__toggle {
   position: absolute;
-  left: 56px;
-  width: 13px;
-  height: 13px;
+  left: 57px;
+  width: 10px;
+  height: 10px;
   background-color: $basic-white;
   border-radius: 50%;
   cursor: pointer;
@@ -126,13 +141,37 @@
 
   &--replay {
     margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
   }
 
   &--subtitles {
-    margin-right: 31px;
+    margin-right: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
   }
 
   &--fullscreen {
     margin-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 41px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $basic-white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

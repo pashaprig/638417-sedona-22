@@ -2,7 +2,15 @@
 
 .radio {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .radio__input {
@@ -10,15 +18,25 @@
   height: 56px;
   margin: 0;
   margin-right: 24px;
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
   appearance: none;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+  }
 }
 
 .radio__box {
   position: absolute;
   margin-left: 18px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 23px;
+  }
 }
 
 /* Checked */

@@ -77,8 +77,15 @@
           </nav>
         </div>
 
-        <div class="hero">
+        <div class="hero hero--smaller-height">
           <span class="visually-hidden">Вид на горы в Седоне</span>
+          <svg class="hero__text--form" width="289" height="39">
+            <use xlink:href="img/sprite.svg#form-hero"></use>
+          </svg>
+
+          <svg class="hero__triangle" viewBox="0 0 1200 57" preserveAspectRatio="xMidYMax slice" width="100%" height="57">
+            <use xlink:href="img/sprite.svg#index-hero-triangle"></use>
+          </svg>
         </div>
       </header>
 
@@ -86,9 +93,9 @@
         <div class="container main__wrapper">
           <section class="reviews">
             <div class="reviews__wrapper">
-              <div class="legend">
+              <div class="legend legend--form">
                 <div class="legend__wrapper">
-                  <h1 class="legend__title">Оставьте свой отзыв</h1>
+                  <h1 class="legend__title legend__title--fs30px">Оставьте свой отзыв</h1>
                   <p class="legend__lead">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
                 </div>
               </div>
@@ -97,15 +104,15 @@
                 <div class="form__groupe form__groupe__name">
                   <fieldset class="form__fieldset">
                     <legend class="form__legend">Представьтесь:</legend>
-                    <label class="form__label">Имя*
+                    <label class="form__label">Имя*:
                       <input class="form__input" type="text" name="name" placeholder="Петр" required>
                     </label>
 
-                    <label class="form__label">Фамилия*
+                    <label class="form__label">Фамилия*:
                       <input class="form__input" type="text" name="surname" placeholder="Иванов" required>
                     </label>
 
-                    <label class="form__label">Отчество
+                    <label class="form__label">Отчество:
                       <input class="form__input" type="text" name="father-name" placeholder="Александрович">
                     </label>
                   </fieldset>
@@ -179,7 +186,7 @@
                       </div>
 
                       <div class="checkbox__ladel__wrapper">
-                        <label class="form__label form__label--bold check">
+                        <label class="form__label form__label--bold check check--less-margin">
                           <input class="form__input check__input" type="checkbox" checked>
                           <span class="check__box"></span>
                           Гора-Колокол
@@ -195,7 +202,7 @@
                       </div>
 
                       <div class="checkbox__ladel__wrapper">
-                        <label class="form__label form__label--bold check option">
+                        <label class="form__label form__label--bold check check--less-margin option">
                           <input class="form__input check__input" type="checkbox">
                           <span class="check__box"></span>
                           Красные скалы
@@ -208,7 +215,7 @@
                 <div class="form__groupe form__groupe__textarea">
                   <fieldset class="form__fieldset">
                     <legend class="form__legend">Опишите свои эмоции:</legend>
-                      <textarea class="form__input textarea" name="comment" rows="8" cols="23">Опишите подробно все свои восторги</textarea>
+                      <textarea class="form__input textarea" name="comment" rows="5" cols="23">Опишите подробно все свои восторги</textarea>
                   </fieldset>
                 </div>
 

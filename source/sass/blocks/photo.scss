@@ -1,5 +1,10 @@
 .photo {
   @media (min-width: $tablet-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
   }
@@ -58,9 +63,13 @@
 
 .photo__item__img {
   width: 100%;
-  max-height: 260px;
+  max-height: 280px;
   background-color: $bcg-photo;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+  }
 }
 
 .photo__about__wrapper {
@@ -68,6 +77,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 80px;
     background-color: $input-grey;
 
     &--contrast {
@@ -87,6 +97,10 @@
 .photo__title__groupe {
   @media (min-width: $tablet-width) {
     margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 22px;
   }
 }
 
@@ -111,6 +125,15 @@
   line-height: 24px;
 }
 
+.photo__item__title {
+  margin: 0;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
+}
+
 .photo__like__numbers {
   display: block;
   margin-left: 14px;
@@ -122,5 +145,8 @@
 }
 
 .photo__item__author {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 400;
+  text-transform: none;
 }
