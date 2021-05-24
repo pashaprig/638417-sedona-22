@@ -2,7 +2,7 @@
   min-height: 280px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal__failure {
@@ -17,7 +17,7 @@
   min-width: 180px;
 
   @media (min-width: $tablet-width) {
-    min-width: 272px
+    min-width: 272px;
   }
 }
 
@@ -30,5 +30,5 @@
 }
 
 .modal__success__button .button {
-  min-width: 458px
+  min-width: 458px;
 }
