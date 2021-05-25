@@ -92,6 +92,11 @@
       width: 123px;
       margin-right: 62px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 60px;
+      }
     }
 
     &::after {
@@ -99,6 +104,11 @@
       width: 123px;
       margin-left: 62px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 60px;
+      }
     }
   }
 }
@@ -147,12 +157,22 @@
       content: "";
       width: 123px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 60px;
+      }
     }
 
     &::after {
       content: "";
       width: 123px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 60px;
+      }
     }
   }
 
@@ -192,6 +212,11 @@
       width: 123px;
       margin-right: 75px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 75px;
+      }
     }
 
     &::after {
@@ -199,6 +224,11 @@
       width: 123px;
       margin-left: 75px;
       border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 75px;
+      }
     }
   }
 }
@@ -224,7 +254,10 @@
 
 .form__groupe__submit .button {
   @media (min-width: $tablet-width) {
+    width: 50%;
     padding-right: 17px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
