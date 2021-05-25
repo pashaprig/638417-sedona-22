@@ -5,6 +5,11 @@ var modalFailure = document.querySelector(".modal__failure");
 var modalFailureButton = document.querySelector(".modal__button__failure");
 var modalSuccess = document.querySelector(".modal__success");
 var modalSuccessButton = document.querySelector(".modal__button__success");
+var reviewsForm = document.querySelector(".reviews-form");
+var formName = reviewsForm.querySelector("[name=name]");
+var formSurname = reviewsForm.querySelector("[name=surname]");
+var formTel = reviewsForm.querySelector("[name=tel]");
+var formEmail = reviewsForm.querySelector("[name=email]");
 
 navMain.classList.remove("main-nav--nojs");
 navMainMobile.classList.remove("main-nav--nojs");
