@@ -5,11 +5,11 @@ var modalFailure = document.querySelector(".modal__failure");
 var modalFailureButton = document.querySelector(".modal__button__failure");
 var modalSuccess = document.querySelector(".modal__success");
 var modalSuccessButton = document.querySelector(".modal__button__success");
-var reviewsForm = document.querySelector(".reviews-form");
-var formName = reviewsForm.querySelector(".form__input-name");
-var formSurname = reviewsForm.querySelector(".form__input-surname");
-var formTel = reviewsForm.querySelector(".form__input-tel");
-var formEmail = reviewsForm.querySelector(".form__input-email");
+// var reviewsForm = document.querySelector(".reviews-form");
+// var formName = reviewsForm.querySelector(".form__input-name");
+// var formSurname = reviewsForm.querySelector(".form__input-surname");
+// var formTel = reviewsForm.querySelector(".form__input-tel");
+// var formEmail = reviewsForm.querySelector(".form__input-email");
 
 //Navigation
 
@@ -50,13 +50,13 @@ modalSuccessButton.addEventListener("click", function() {
     }
 });
 
-//Pop Up
+// //Pop Up
 
-reviewsForm.addEventListener("submit", function (evt) {
-  if (!formName.value || !formSurname.value || !formTel.value || !formEmail.value) {
-    evt.preventDefault();
-    modalFailure.classList.add("modal__failure--open");
-  } else {
-    modalSuccess.classList.add("modal__success--open");
-    }
-});
+// reviewsForm.addEventListener("submit", function (evt) {
+//   if (!formName.value || !formSurname.value || !formTel.value || !formEmail.value) {
+//     evt.preventDefault();
+//     modalFailure.classList.add("modal__failure--open");
+//   } else {
+//     modalSuccess.classList.add("modal__success--open");
+//     }
+// });

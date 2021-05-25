@@ -27,6 +27,10 @@
   border-radius: 5px;
   cursor: pointer;
 
+  &:active {
+    background-color: $input-grey-active;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 25px;
   }

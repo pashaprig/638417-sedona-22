@@ -29,7 +29,6 @@
   @media (min-width: $tablet-width) {
     grid-column: span 2;
     min-height: auto;
-    // margin-top: 54px;
     padding-bottom: 0;
     padding-left: 58px;
     border-left: 1px solid $groupe-border-grey;
@@ -47,6 +46,11 @@
     margin-bottom: 46px;
   }
 }
+
+// .form__groupe__name .form__fieldset {
+//   padding-left: 58px;
+//   border-left: 1px solid $groupe-border-grey;
+// }
 
 .form__groupe__contacts {
   padding-bottom: 17px;
@@ -94,10 +98,6 @@
       height: 1px;
       margin-right: 60px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-right: 60px;
-      // }
     }
 
     &::after {
@@ -106,10 +106,6 @@
       height: 1px;
       margin-left: 60px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-left: 60px;
-      // }
     }
   }
 }
@@ -161,10 +157,6 @@
       height: 1px;
       margin-right: 60px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-right: 60px;
-      // }
     }
 
     &::after {
@@ -173,10 +165,6 @@
       height: 1px;
       margin-left: 60px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-left: 60px;
-      // }
     }
   }
 
@@ -218,10 +206,6 @@
       height: 1px;
       margin-right: 75px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-right: 60px;
-      // }
     }
 
     &::after {
@@ -230,10 +214,6 @@
       height: 1px;
       margin-left: 75px;
       background-color: $groupe-border-grey;
-
-      // @media (min-width: $desktop-width) {
-      //   margin-left: 60px;
-      // }
     }
   }
 }
@@ -386,7 +366,7 @@
   }
 
   &:active {
-    background-color: $input-grey-active;
+    background-color: $basic-white;
   }
 }
 
