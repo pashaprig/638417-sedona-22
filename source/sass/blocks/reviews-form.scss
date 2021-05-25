@@ -222,6 +222,17 @@
   }
 }
 
+.form__groupe__submit .button {
+  @media (min-width: $tablet-width) {
+    padding-right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
+  }
+
+}
+
 .form__groupe__checkbox__wrapper {
   display: flex;
   flex-direction: column;
