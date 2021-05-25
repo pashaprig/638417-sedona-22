@@ -34,7 +34,7 @@
   }
 
   &--modal {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -81,7 +81,6 @@
 
   &--modal {
     padding: 0 45px;
-    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;

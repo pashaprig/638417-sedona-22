@@ -2,15 +2,51 @@
   min-height: 280px;
   margin-right: auto;
   margin-left: auto;
+  background-color: $basic-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .modal__failure {
   max-width: 400px;
+
+  &--open {
+    position: absolute;
+    bottom: 719px;
+  }
+
+  // &--close {
+  //   display: none;
+  // }
 }
 
 .modal__success {
   max-width: 640px;
+  min-height: 300px;
+
+  &--open {
+    position: absolute;
+    bottom: 348px;
+  }
+
+  // &--close {
+  //   display: none;
+  // }
+}
+
+.modal__failure__text {
+  margin-bottom: 25px;
+}
+
+.modal__success__text {
+  margin-bottom: 40px;
+}
+
+.modal__success .button {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .modal__button {
@@ -25,10 +61,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 98px;
+  padding: 20px;
   background-color: $controls-grey;
 }
 
 .modal__success__button .button {
-  min-width: 458px;
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
+
 }
