@@ -47,3 +47,8 @@
 .radio__input:checked:active + .radio__box {
   opacity: 0.3;
 }
+
+/* Disabled */
+.radio__input:disabled {
+  background-color: $bcg-photo;
+}

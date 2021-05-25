@@ -48,3 +48,8 @@
 .check__input:checked:active + .check__box {
   opacity: 0.3;
 }
+
+/* Disabled */
+.check__input:disabled {
+  background-color: $bcg-photo;
+}
