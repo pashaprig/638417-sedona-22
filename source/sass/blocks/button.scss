@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  min-height: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $basic-blue;
+  border: none;
+}
