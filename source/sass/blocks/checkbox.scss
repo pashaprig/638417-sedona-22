@@ -25,6 +25,7 @@
   margin-right: 23px;
   appearance: none;
   border-radius: 5px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     margin-right: 25px;
@@ -46,4 +47,9 @@
 
 .check__input:checked:active + .check__box {
   opacity: 0.3;
+}
+
+/* Disabled */
+.check__input:disabled {
+  background-color: $bcg-photo;
 }

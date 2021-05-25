@@ -20,6 +20,7 @@
   margin-right: 24px;
   appearance: none;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-right: 19px;
@@ -33,10 +34,6 @@
 .radio__box {
   position: absolute;
   margin-left: 18px;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 23px;
-  }
 }
 
 /* Checked */
@@ -49,4 +46,9 @@
 
 .radio__input:checked:active + .radio__box {
   opacity: 0.3;
+}
+
+/* Disabled */
+.radio__input:disabled {
+  background-color: $bcg-photo;
 }

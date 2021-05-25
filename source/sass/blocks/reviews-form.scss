@@ -6,14 +6,20 @@
 }
 
 .form__groupe {
-  padding-top: 20px;
+  margin-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   border-top: 1px solid $form-groupe-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 53px;
     border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
   }
 }
 
@@ -23,13 +29,14 @@
   @media (min-width: $tablet-width) {
     grid-column: span 2;
     min-height: auto;
-    padding-top: 54px;
+    // margin-top: 54px;
     padding-bottom: 0;
     padding-left: 58px;
+    border-left: 1px solid $groupe-border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 43px;
+    margin-top: 43px;
     padding-left: 81px;
   }
 }
@@ -47,6 +54,7 @@
   @media (min-width: $tablet-width) {
     grid-column: span 4;
     padding-top: 36px;
+    margin-top: 0;
   }
 }
 
@@ -75,21 +83,42 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      margin-right: 62px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 60px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      margin-left: 62px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 60px;
+      }
+    }
   }
 }
 
 .form__groupe__radio {
-  padding-bottom: 11px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
     order: -1;
-    padding-top: 53px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 43px;
   }
 }
 
@@ -107,11 +136,12 @@
 }
 
 .form__groupe__checkbox {
-  padding-top: 15px;
+  padding-top: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 37px;
     grid-column: span 4;
+    padding-bottom: 37px;
+    margin-top: 10px;
   }
 }
 
@@ -119,7 +149,31 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 120px 24px 120px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 60px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 60px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -141,6 +195,7 @@
   @media (min-width: $tablet-width) {
     grid-column: span 4;
     padding-top: 0;
+    margin-top: 0;
   }
 }
 
@@ -148,12 +203,38 @@
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
     margin-bottom: 45px;
+
+    &::before {
+      content: "";
+      width: 123px;
+      margin-right: 75px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 75px;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 123px;
+      margin-left: 75px;
+      border-bottom: 1px solid $groupe-border-grey;
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+        margin-left: 75px;
+      }
+    }
   }
 }
 
 .form__groupe__submit {
-  padding-top: 45px;
+  padding-top: 25px;
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
@@ -163,10 +244,24 @@
     align-items: center;
     padding-top: 8px;
     padding-bottom: 60px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 66px;
+  }
+}
+
+.form__groupe__submit .button {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-right: 17px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 5px;
   }
 }
 
@@ -181,7 +276,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -252,7 +347,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 25%;
+    min-width: 0;
   }
 }
 
@@ -274,6 +369,7 @@
   padding: 18px 0 14px 22px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

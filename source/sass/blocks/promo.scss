@@ -102,7 +102,6 @@
 .promo__controls__scale {
   height: 3px;
   width: 100%;
-  // margin: 22px 23px 20px 22px;
   margin-right: 23px;
   margin-left: 23px;
   background: rgba(255, 255, 255, 0.2);
@@ -129,6 +128,7 @@
 
 .promo__controls__buttons__icon {
   fill: $controls-icon;
+  cursor: pointer;
 
   &:hover {
     fill: $radio;
