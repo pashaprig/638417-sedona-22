@@ -5,11 +5,11 @@ var modalFailure = document.querySelector(".modal__failure");
 var modalFailureButton = document.querySelector(".modal__button__failure");
 var modalSuccess = document.querySelector(".modal__success");
 var modalSuccessButton = document.querySelector(".modal__button__success");
-// var reviewsForm = document.querySelector(".reviews-form");
-// var formName = reviewsForm.querySelector(".form__input-name");
-// var formSurname = reviewsForm.querySelector(".form__input-surname");
-// var formTel = reviewsForm.querySelector(".form__input-tel");
-// var formEmail = reviewsForm.querySelector(".form__input-email");
+var reviewsForm = document.querySelector(".reviews-form");
+var formName = document.querySelector(".form__input-name");
+var formSurname = document.querySelector(".form__input-surname");
+var formTel = document.querySelector(".form__input-tel");
+var formEmail = document.querySelector(".form__input-email");
 
 //Navigation
 
@@ -26,37 +26,42 @@ navToggle.addEventListener("click", function() {
   }
 });
 
+//Pop Up
+
+reviewsForm.addEventListener("submit", function (evt) {
+  console.log(formName.value);
+  if (!formName.value || !formSurname.value || !formTel.value || !formEmail.value) {
+    evt.preventDefault();
+    modalFailure.classList.add("modal--open");
+  } else {
+    modalSuccess.classList.add("modal--open");
+    }
+});
+
 //Failure
 
-modalFailure.classList.add("modal__failure--close");
+// modalFailure.classList.add("modal__failure--close");
 
 modalFailureButton.addEventListener("click", function() {
-  if (modalFailure.classList.contains("modal__failure--open")) {
-    modalFailure.classList.remove("modal__failure--open");
-    modalFailure.classList.add("modal__failure--close");
+  if (modalFailure.classList.contains("modal--open")) {
+    modalFailure.classList.remove("modal--open");
+    // modalFailure.classList.add("modal__failure--close");
   } else {
   }
 });
 
 //Success
 
-modalSuccess.classList.add("modal__success--close");
+// modalSuccess.classList.add("modal__success--close");
 
 modalSuccessButton.addEventListener("click", function() {
-  if (modalSuccess.classList.contains("modal__success--open")) {
-    modalSuccess.classList.remove("modal__success--open");
-    modalSuccess.classList.add("modal__success--close");
+  if (modalSuccess.classList.contains("modal--open")) {
+    modalSuccess.classList.remove("modal--open");
+    // modalSuccess.classList.add("modal__success--close");
   } else {
     }
 });
 
-// //Pop Up
-
-// reviewsForm.addEventListener("submit", function (evt) {
-//   if (!formName.value || !formSurname.value || !formTel.value || !formEmail.value) {
-//     evt.preventDefault();
-//     modalFailure.classList.add("modal__failure--open");
-//   } else {
-//     modalSuccess.classList.add("modal__success--open");
-//     }
-// });
+//чтобы работало несколько раз нужно вставить?
+// modalFailure.offsetWidth = modalFailure.offsetWidth;
+// modalSuccess.offsetWidth = modalSuccess.offsetWidth;

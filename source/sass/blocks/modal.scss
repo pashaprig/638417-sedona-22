@@ -1,56 +1,45 @@
 .modal {
+  display: none;
   min-height: 280px;
   background-color: $basic-white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--open {
+    display: block;
+  }
 }
 
 .modal__failure {
+  min-width: 320px;
   max-width: 400px;
+  position: absolute;
+  left: 50%;
+  bottom: 719px;
+  transform: translateX(-50%);
 
-  &--open {
-    position: absolute;
-    bottom: 719px;
-
-    @media (min-width: $tablet-width) {
-      left: 50%;
-      bottom: 345px;
-      width: 400px;
-      transform: translateX(-50%);
-      padding-top: 15px;
-      padding-bottom: 50px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 232px;
-    }
+  @media (min-width: $tablet-width) {
+    bottom: 345px;
+    width: 400px;
+    padding-top: 15px;
+    padding-bottom: 50px;
   }
 
-  &--close {
-    display: none;
+  @media (min-width: $desktop-width) {
+    bottom: 232px;
   }
 }
 
 .modal__success {
+  position: absolute;
+  left: 50%;
+  bottom: 348px;
+  transform: translateX(-50%);
   max-width: 640px;
   min-height: 300px;
 
   @media (min-width: $tablet-width) {
     min-width: 640px;
-  }
-
-  &--open {
-    position: absolute;
-    bottom: 348px;
-
-    @media (min-width: $tablet-width) {
-      left: 50%;
-      bottom: 505px;
-      transform: translateX(-50%);
-    }
-  }
-
-  &--close {
-    display: none;
+    bottom: 505px;
   }
 }
 
@@ -89,6 +78,10 @@
   @media (min-width: $tablet-width) {
     min-width: 272px;
   }
+}
+
+.modal__failure__button .button {
+  min-width: 180px;
 }
 
 .modal__success__button {
