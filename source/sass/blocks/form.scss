@@ -1,4 +1,4 @@
-.reviews-form {
+.form {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,12 +6,13 @@
 }
 
 .form__groupe {
-  margin-top: 20px;
+  padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   border-top: 1px solid $form-groupe-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-right: 0;
     padding-left: 0;
     margin-top: 53px;
@@ -58,9 +59,9 @@
   }
 }
 
-.contacts__ladel__wrapper {
+.form__groupe__contacts__wrapper {
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,12 +130,12 @@
 }
 
 .form__groupe__checkbox {
-  padding-top: 6px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     grid-column: span 4;
     padding-bottom: 37px;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 
@@ -215,7 +216,7 @@
 }
 
 .form__groupe__submit {
-  padding-top: 25px;
+  padding-top: 45px;
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
@@ -320,29 +321,29 @@
     line-height: 26px;
     text-transform: none;
   }
+
+  &--mobile-only {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop-only {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 }
 
-.checkbox__ladel__wrapper {
+.form__ladel__wrapper {
   @media (min-width: $tablet-width) {
     min-width: 50%;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 0;
-  }
-}
-
-.label__desktop__only {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: inline;
-  }
-}
-
-.label__mobile__only {
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }
 
