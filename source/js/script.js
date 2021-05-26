@@ -40,28 +40,18 @@ reviewsForm.addEventListener("submit", function (evt) {
 
 //Failure
 
-// modalFailure.classList.add("modal__failure--close");
-
 modalFailureButton.addEventListener("click", function() {
   if (modalFailure.classList.contains("modal--open")) {
     modalFailure.classList.remove("modal--open");
-    // modalFailure.classList.add("modal__failure--close");
   } else {
   }
 });
 
 //Success
 
-// modalSuccess.classList.add("modal__success--close");
-
 modalSuccessButton.addEventListener("click", function() {
   if (modalSuccess.classList.contains("modal--open")) {
     modalSuccess.classList.remove("modal--open");
-    // modalSuccess.classList.add("modal__success--close");
   } else {
     }
 });
-
-//чтобы работало несколько раз нужно вставить?
-// modalFailure.offsetWidth = modalFailure.offsetWidth;
-// modalSuccess.offsetWidth = modalSuccess.offsetWidth;

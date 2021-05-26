@@ -41,6 +41,7 @@
 }
 
 /* Checked */
+
 .radio__input:checked + .radio__box {
   width: 20px;
   height: 20px;
@@ -53,6 +54,7 @@
 }
 
 /* Disabled */
+
 .radio__input:disabled {
   background-color: $bcg-photo;
 }

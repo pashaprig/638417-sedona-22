@@ -43,6 +43,7 @@
 }
 
 /* Checked */
+
 .check__input:checked + .check__box {
   width: 23px;
   height: 16px;
@@ -54,6 +55,7 @@
 }
 
 /* Disabled */
+
 .check__input:disabled {
   background-color: $bcg-photo;
 }
