@@ -51,6 +51,14 @@
     }
   }
 
+  &--blue .advantages__item__about {
+    color: $basic-white;
+  }
+
+  &--blue .advantages__item__number {
+    color: $basic-white;
+  }
+
   &--align-left {
     min-height: 105px;
     padding-top: 15px;
@@ -223,7 +231,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-
+  color: $special-black;
 
   @media (min-width: $tablet-width) {
     padding-right: 18px;
@@ -256,6 +264,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  color: $special-black;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -266,7 +275,6 @@
   padding-right: 20px;
   margin-top: 12px;
   margin-left: 55px;
-  color: $special-black;
 
   @media (min-width: $tablet-width) {
     padding-right: 18px;
@@ -304,7 +312,6 @@
   padding-right: 15px;
   padding-left: 15px;
   margin-top: 17px;
-  color: $special-black;
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;

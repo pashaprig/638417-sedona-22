@@ -140,6 +140,7 @@
 }
 
 .form__groupe__checkbox .form__legend {
+  width: 100%;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -163,10 +164,6 @@
       margin-left: 60px;
       background-color: $groupe-border-grey;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 415px;
   }
 }
 

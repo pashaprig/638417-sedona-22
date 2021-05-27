@@ -55,12 +55,7 @@
 }
 
 .appointment__button {
-  margin: 0 auto;
-  text-decoration: none;
-  max-width: 458px;
-}
-
-.appointment a {
-  color: $basic-white;
-  text-decoration: none;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
