@@ -34,7 +34,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $special-black;
+  color: $radio;
 
   @media (min-width: $tablet-width) {
     padding: 0 130px;
@@ -55,7 +55,12 @@
 }
 
 .appointment__button {
+  text-decoration: none;
   @media (min-width: $tablet-width) {
     width: 458px;
   }
 }
+
+// .appointment a {
+
+// }

@@ -311,6 +311,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+  color: $radio;
+
+  &--black {
+    color: $basic-black;
+  }
 
   &--bold {
     font-weight: 700;
@@ -414,6 +419,7 @@ input[type="email"] {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
+  color: $radio;
 
   @media (min-width: $tablet-width) {
     display: inline;
