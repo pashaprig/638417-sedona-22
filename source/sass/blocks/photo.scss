@@ -150,4 +150,8 @@
   font-weight: 400;
   text-transform: none;
   color: $radio;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
